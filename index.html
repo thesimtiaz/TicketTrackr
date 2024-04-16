@@ -35,7 +35,7 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              official: "#1DD100",
             },
           },
         },
@@ -46,12 +46,66 @@
       .inter {
         font-family: "Inter", sans-serif;
       }
-      .raleway{
+      .raleway {
         font-family: "Raleway", sans-serif;
       }
     </style>
   </head>
   <body>
-
+    <header class="container mx-auto lg:px-8 px-4">
+      <!-- navbar section starts here -->
+      <nav class="navbar bg-base-100 py-12 raleway">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-7 w-7"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-sm font-medium"
+            >
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Destination</a></li>
+              <li><a href="#">Search</a></li>
+            </ul>
+          </div>
+          <a class="text-xl md:text-3xl lg:text-4xl font-extrabold"
+            >Ticket <span class="text-official">Trackr</span></a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul
+            class="menu menu-horizontal px-1 text-sm lg:text-lg font-medium gap-6"
+          >
+            <li><a class="text-official">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a
+            class="btn btn-outline text-official text-base lg:text-xl lg:font-bold bg-official bg-opacity-15 border-official border-opacity-40 hover:text-official"
+            >Bus <img src="./assets/icons/bus.png" alt=""
+          /></a>
+        </div>
+      </nav>
+      <!-- navbar section ends here -->
+      
+    </header>
   </body>
 </html>
