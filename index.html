@@ -39,6 +39,7 @@
               yellow: "#FFBF0F",
               rose: "#F78C9C",
               gray: "#F7F8F8",
+              white: "#FFFFFF",
             },
           },
         },
@@ -241,7 +242,7 @@
 
       <!-- paribahan section starts here -->
       <section
-        class="min-h-screen bg-gray mt-12 border-t-4 border-official"
+        class="bg-gray mt-12 border-t-4 border-official pb-24"
         style="border-radius: 88px 88px 0px 0px"
       >
         <div class="container mx-auto px-4 lg:px-8 mt-12">
@@ -324,9 +325,298 @@
             </div>
           </div>
         </div>
+
+        <!-- seat management -->
+        <div class="container mx-auto px-4 lg:px-8 mt-12">
+          <div
+            class="flex flex-col lg:flex-row justify-evenly rounded-xl bg-white shadow px-4 lg:px-8"
+          >
+            <div class="pb-12">
+              <div class="mt-12 space-y-2">
+                <h3 class="text-lg lg:text-2xl font-semibold">
+                  Select Your Seat
+                </h3>
+                <div class="border border-dashed border-[#03071233]"></div>
+                <div class="flex justify-between">
+                  <button class="btn btn-ghost">
+                    <img src="./assets/icons/seat-gray.png" alt="" />Available
+                  </button>
+                  <button class="btn btn-ghost text-official">
+                    <img
+                      src="./assets/icons/seat-green-filled.png"
+                      alt=""
+                    />Selected
+                  </button>
+                </div>
+                <div class="border border-dashed border-[#03071233]"></div>
+              </div>
+
+              <!-- seat area-->
+              <div class="text-right my-4">
+                <button class="bg-[#0307121A] px-10 py-4 rounded-xl">
+                  <img src="assets/icons/steering-wheel.png" alt="" />
+                </button>
+              </div>
+              <div class="grid grid-cols-5 gap-4 lg:gap-14">
+                <div
+                  class="col-span-3 grid grid-cols-3 gap-3 lg:gap-5 text-lg font-medium text-[#03071280]"
+                >
+                  <button disabled="">A</button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    A1
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    A2
+                  </button>
+                  <button disabled="">B</button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    B1
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    B2
+                  </button>
+                  <button disabled="">C</button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    C1
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    C2
+                  </button>
+                  <button disabled="">D</button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    D1
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    D2
+                  </button>
+                  <button disabled="">E</button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    E1
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    E2
+                  </button>
+                  <button disabled="">F</button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    F1
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    F2
+                  </button>
+                  <button disabled="">G</button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    G1
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    G2
+                  </button>
+                  <button disabled="">H</button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    H1
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    H2
+                  </button>
+                  <button disabled="">I</button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    I1
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    I2
+                  </button>
+                  <button disabled="">J</button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    J1
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    J2
+                  </button>
+                </div>
+                <div
+                  class="col-span-2 grid grid-cols-2 gap-3 lg:gap-5 text-lg font-medium text-[#03071280]"
+                >
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    A3
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    A4
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    B3
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    B4
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    C3
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    C4
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    D3
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    D4
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    E3
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    E4
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    F3
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    F4
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    G3
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    G4
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    H3
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    H4
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    I3
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    I4
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    J3
+                  </button>
+                  <button class="bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                    J4
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="lg:border-2 lg:border-dashed border-[#03071233] lg:border-y-4"
+            ></div>
+
+            <!-- seat selection area -->
+            <div class="inter">
+              <div class="mt-12">
+                <div class="space-y-2">
+                  <h3 class="text-lg lg:text-2xl font-semibold">
+                    Select Your Seat
+                  </h3>
+                  <div class="border border-dashed border-[#03071233]"></div>
+                </div>
+
+                <div class="bg-gray rounded-xl p-4 lg:p-8 shadow-lg mt-6">
+                  <div
+                    class="flex items-center justify-between text-base font-medium"
+                  >
+                    <p>
+                      Seat
+                      <span class="bg-[#1DD100] px-1 rounded-full text-white"
+                        >0</span
+                      >
+                    </p>
+                    <p>Class</p>
+                    <p>Price</p>
+                  </div>
+
+                  <div
+                    class="border border-dashed border-[#03071233] mt-2"
+                  ></div>
+
+                  <div class="opacity-60 space-y-1 mt-4">
+                    <div class="flex justify-between">
+                      <p>C2</p>
+                      <p>Economoy</p>
+                      <p>550</p>
+                    </div>
+
+                    <div class="flex justify-between">
+                      <p>C2</p>
+                      <p>Economoy</p>
+                      <p>550</p>
+                    </div>
+                  </div>
+
+                  <div class="border border-[#03071233] mt-2"></div>
+
+                  <div class="font-medium my-2">
+                    <div class="flex justify-between">
+                      <p>Total Price</p>
+                      <p>BDT 1100</p>
+                    </div>
+                  </div>
+
+                  <div class="flex my-2">
+                    <input
+                      type="text"
+                      placeholder="Have any coupon?"
+                      class="w-full px-4 outline-none rounded-s-lg raleway"
+                    />
+                    <button
+                      class="text-white font-semibold px-5 py-3 bg-official rounded-r-lg"
+                      disabled
+                    >
+                      Apply
+                    </button>
+                  </div>
+
+                  <div class="flex justify-between font-medium">
+                    <p>Grand Total</p>
+                    <p>BDT 1100</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- input form -->
+              <div class="space-y-4 mt-8">
+                <h3 class="font-semibold">
+                  Passenger Name<span class="text-red-500">*</span>
+                </h3>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  class="border border-[#0307121A] rounded-xl outline-none p-4 w-full"
+                />
+                <h3 class="font-semibold">
+                  Phone Number<span class="text-red-500">*</span>
+                </h3>
+                <input
+                  type="text"
+                  placeholder="Enter your phone number"
+                  class="border border-[#0307121A] rounded-xl outline-none p-4 w-full"
+                  required
+                />
+                <h3 class="font-semibold">Email ID</h3>
+                <input
+                  type="email"
+                  placeholder="Enter your email id"
+                  class="border border-[#0307121A] rounded-xl outline-none p-4 w-full"
+                />
+
+                <button
+                  class="w-full bg-official p-3 rounded-xl text-xl text-white font-bold"
+                >
+                  Next
+                </button>
+
+                <div class="flex flex-row gap-2 justify-around opacity-60 pb-6">
+                  <a class="link">Terms and Conditions</a>
+                  <a class="link">Cancellation Policy</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- paribahan section ends here -->
-      
     </main>
   </body>
 </html>
