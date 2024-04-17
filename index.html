@@ -275,8 +275,10 @@
                 <button
                   class="btn btn-outline text-official text-base lg:text-xl lg:font-bold bg-official bg-opacity-15 border-official border-opacity-40 hover:text-official mt-6 lg:mt-0"
                 >
-                  <img src="./assets/icons/seat-green.png" alt="" />40 Seats
-                  left
+                  <img src="./assets/icons/seat-green.png" alt="" /><span
+                    id="total-seat"
+                    >40</span
+                  >Seats left
                 </button>
               </div>
 
@@ -362,137 +364,217 @@
                   class="col-span-3 grid grid-cols-3 gap-3 lg:gap-5 text-lg font-medium text-[#03071280]"
                 >
                   <button disabled="">A</button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     A1
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     A2
                   </button>
                   <button disabled="">B</button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     B1
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     B2
                   </button>
                   <button disabled="">C</button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     C1
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     C2
                   </button>
                   <button disabled="">D</button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     D1
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     D2
                   </button>
                   <button disabled="">E</button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     E1
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     E2
                   </button>
                   <button disabled="">F</button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     F1
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     F2
                   </button>
                   <button disabled="">G</button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     G1
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     G2
                   </button>
                   <button disabled="">H</button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     H1
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     H2
                   </button>
                   <button disabled="">I</button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     I1
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     I2
                   </button>
                   <button disabled="">J</button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     J1
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     J2
                   </button>
                 </div>
                 <div
                   class="col-span-2 grid grid-cols-2 gap-3 lg:gap-5 text-lg font-medium text-[#03071280]"
                 >
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     A3
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     A4
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     B3
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     B4
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     C3
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     C4
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     D3
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     D4
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     E3
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     E4
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     F3
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     F4
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     G3
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     G4
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     H3
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     H4
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     I3
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     I4
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     J3
                   </button>
-                  <button class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl">
+                  <button
+                    class="btn-seat bg-gray px-4 lg:px-10 py-2 lg:py-4 rounded-xl"
+                  >
                     J4
                   </button>
                 </div>
@@ -519,7 +601,9 @@
                   >
                     <p>
                       Seat
-                      <span id="seat-count" class="bg-[#1DD100] px-1 rounded-full text-white"
+                      <span
+                        id="seat-count"
+                        class="bg-[#1DD100] px-1 rounded-full text-white"
                         >0</span
                       >
                     </p>
@@ -547,21 +631,23 @@
 
                   <div class="border border-[#03071233] mt-2"></div>
 
-                  <div class="font-medium my-2">
+                  <div id="total-discount" class="font-medium my-2">
                     <div class="flex justify-between">
                       <p>Total Price</p>
                       <p>BDT <span id="total-price">00</span></p>
                     </div>
                   </div>
 
-                  <div class="flex my-2">
+                  <div id="coupon-area" class="flex my-2">
                     <input
+                      id="input-field"
                       type="text"
                       placeholder="Have any coupon?"
                       class="w-full px-4 outline-none rounded-s-lg raleway"
                     />
                     <button
-                      class="text-white font-semibold px-5 py-3 bg-official rounded-r-lg"
+                      id="applyCoupon"
+                      class="btn text-white font-semibold px-5 py-3 rounded-r-lg"
                       disabled
                     >
                       Apply

@@ -2,6 +2,8 @@ const seatSelect = document.getElementsByClassName("btn-seat");
 const select = document.getElementById("selected");
 let count = 0;
 let availableSeat = 40;
+let grandPrice = 0;
+let totalDiscount = 0;
 
 for (const btn of seatSelect) {
   btn.addEventListener("click", function (e) {
@@ -31,6 +33,40 @@ for (const btn of seatSelect) {
     setInnerText("total-price", totalPrice);
     setInnerText("grand-total", totalPrice);
     setInnerText("total-seat", availableSeat);
+
+    // coupon area
+    if (count == 4) {
+      const applyCoupon = document.getElementById("applyCoupon");
+      applyCoupon.removeAttribute("disabled");
+      applyCoupon.style.backgroundColor = "#1DD100";
+
+      applyCoupon.addEventListener("click", function () {
+        const inputField = document.getElementById("input-field").value;
+        if (inputField == "NEW15") {
+          totalDiscount = totalPrice * 0.15;
+          grandPrice = totalPrice * 0.85;
+          document.getElementById("coupon-area").classList.add("hidden");
+        } else if (inputField == "Couple 20") {
+          totalDiscount = totalPrice * 0.2;
+          grandPrice = totalPrice * 0.8;
+          document.getElementById("coupon-area").classList.add("hidden");
+        } else {
+          alert("Invalid Coupon Code");
+          document.getElementById("input-field").value = "";
+          document.getElementById("total-discount").removeChild(div);
+        }
+        setInnerText("grand-total", grandPrice);
+
+        const div = document.createElement("div");
+
+        div.innerHTML = `<div class="flex justify-between mt-2">
+          <p>Discount Price</p>
+          <p>BDT <span id="total-price">${totalDiscount}</span></p>
+          </div>`;
+
+        document.getElementById("total-discount").appendChild(div);
+      });
+    }
   });
 }
 
