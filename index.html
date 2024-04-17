@@ -106,6 +106,7 @@
         </div>
         <div class="navbar-end">
           <a
+            href="#bus"
             class="btn btn-outline text-official text-base lg:text-xl lg:font-bold bg-official bg-opacity-15 border-official border-opacity-40 hover:text-official"
             >Bus <img src="./assets/icons/bus.png" alt=""
           /></a>
@@ -360,7 +361,7 @@
               </div>
 
               <!-- seat area-->
-              <div class="text-right my-4">
+              <div id="bus" class="text-right my-4">
                 <button class="bg-[#0307121A] px-10 py-4 rounded-xl">
                   <img src="assets/icons/steering-wheel.png" alt="" />
                 </button>
@@ -673,6 +674,7 @@
                   Passenger Name<span class="text-red-500">*</span>
                 </h3>
                 <input
+                  id="passengerName"
                   type="text"
                   placeholder="Enter your name"
                   class="border border-[#0307121A] rounded-xl outline-none p-4 w-full"
@@ -689,6 +691,7 @@
                 />
                 <h3 class="font-semibold">Email ID</h3>
                 <input
+                  id="emailID"
                   type="email"
                   placeholder="Enter your email id"
                   class="border border-[#0307121A] rounded-xl outline-none p-4 w-full"

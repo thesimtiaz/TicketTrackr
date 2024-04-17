@@ -69,6 +69,8 @@ for (const btn of seatSelect) {
     }
 
     const phoneNumberInput = document.getElementById("phoneNumber");
+    const nameInput = document.getElementById("passengerName");
+    const emailInput = document.getElementById("emailID");
     const btnNext = document.getElementById("next");
     const popUp = document.getElementById("popUp");
 
@@ -97,6 +99,10 @@ for (const btn of seatSelect) {
     const closePopUp = document.getElementById("closePopUp");
     closePopUp.addEventListener("click", function () {
       popUp.close();
+
+      phoneNumberInput.value = "";
+      nameInput.value = "";
+      emailInput.value = "";
     });
   });
 }
