@@ -67,6 +67,37 @@ for (const btn of seatSelect) {
         document.getElementById("total-discount").appendChild(div);
       });
     }
+
+    const phoneNumberInput = document.getElementById("phoneNumber");
+    const btnNext = document.getElementById("next");
+    const popUp = document.getElementById("popUp");
+
+    function nextButton() {
+      const phoneNumber = phoneNumberInput.value;
+
+      if (count >= 1 && phoneNumber.trim() !== "") {
+        btnNext.removeAttribute("disabled");
+        btnNext.style.backgroundColor = "#1DD100";
+
+        if (!btnNext.hasListener) {
+          btnNext.addEventListener("click", function () {
+            popUp.showModal();
+          });
+          btnNext.hasListener = true;
+        }
+      } else {
+        btnNext.setAttribute("disabled", true);
+        btnNext.style.backgroundColor = "";
+      }
+    }
+
+    nextButton();
+
+    phoneNumberInput.addEventListener("input", nextButton);
+    const closePopUp = document.getElementById("closePopUp");
+    closePopUp.addEventListener("click", function () {
+      popUp.close();
+    });
   });
 }
 

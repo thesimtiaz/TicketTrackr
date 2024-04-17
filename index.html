@@ -53,6 +53,9 @@
       .raleway {
         font-family: "Raleway", sans-serif;
       }
+      html {
+        scroll-behavior: smooth;
+      }
     </style>
   </head>
   <body>
@@ -130,11 +133,13 @@
                   streamlined .
                 </p>
               </div>
-              <button
-                class="btn lg:btn-lg bg-official text-black text-base md:text-lg lg:text-xl font-bold border-none hover:bg-black hover:text-white mt-8"
+              <a href="#buy-tickets"
+                ><button
+                  class="btn lg:btn-lg bg-official text-black text-base md:text-lg lg:text-xl font-bold border-none hover:bg-black hover:text-white mt-8"
+                >
+                  Buy Tickets
+                </button></a
               >
-                Buy Tickets
-              </button>
             </div>
           </div>
         </div>
@@ -242,6 +247,7 @@
 
       <!-- paribahan section starts here -->
       <section
+        id="buy-tickets"
         class="bg-gray mt-12 border-t-4 border-official pb-24"
         style="border-radius: 88px 88px 0px 0px"
       >
@@ -675,6 +681,7 @@
                   Phone Number<span class="text-red-500">*</span>
                 </h3>
                 <input
+                  id="phoneNumber"
                   type="text"
                   placeholder="Enter your phone number"
                   class="border border-[#0307121A] rounded-xl outline-none p-4 w-full"
@@ -688,7 +695,9 @@
                 />
 
                 <button
-                  class="w-full bg-official p-3 rounded-xl text-xl text-white font-bold"
+                  id="next"
+                  class="btn w-full p-3 rounded-xl text-xl text-white font-bold"
+                  disabled
                 >
                   Next
                 </button>
@@ -701,6 +710,27 @@
             </div>
           </div>
         </div>
+
+        <!-- modal section -->
+        <dialog id="popUp" class="rounded-xl">
+          <div class="bg-white max-w-4xl text-center p-6 lg:p-12 space-y-4">
+            <img src="./assets/icons/success.png" class="inline" />
+            <h3 class="text-xl font-medium text-[#27AE60]">SUCCESS</h3>
+            <p class="text-xl font-medium opacity-80">
+              Thank you for Booking Our Bus Seats.<br />
+              We are working hard to find the best service and deals for you.
+            </p>
+            <p class="text-xl font-light">
+              Shortly you will find a confirmation in your email.
+            </p>
+            <button
+              id="closePopUp"
+              class="text-xl font-semibold text-white py-3 px-20 bg-[#27AE60] rounded-full"
+            >
+              Continue
+            </button>
+          </div>
+        </dialog>
       </section>
       <!-- paribahan section ends here -->
     </main>
